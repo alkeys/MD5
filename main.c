@@ -1,5 +1,4 @@
 #include <openssl/md5.h>
-#include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -19,7 +18,7 @@ int main(int argc, char**argv)
   fclose(fh);
   md5_result = malloc(MD5_DIGEST_LENGTH);
   MD5(buf, filesize, md5_result);
-  printf("MD5 (%s) = ", "xd");
+  printf("MD5 (%s) = ", "code");
   for (i=0; i < MD5_DIGEST_LENGTH; i++)
   {
     printf("%02x",  md5_result[i]);
